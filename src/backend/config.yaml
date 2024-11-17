@@ -1,0 +1,8 @@
+# Project and environment settings
+project_id: "ai-sandbox-company-73"
+location: "asia-southeast1"
+llm_model: "gemini-1.5-pro-002"
+embeddings_model: "text-embedding-004"
+service_account_address: "/Users/dylim/Documents/projects/RAG_Langchain/env/ai-sandbox-company-73-2659f4150720.json"
+google_cloud_external_ip: "34.142.165.16"
+vectorstore_collection_name: "langchain_vector_db"

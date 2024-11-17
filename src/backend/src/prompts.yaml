@@ -1,0 +1,15 @@
+context_prompt:
+  template: |
+    Context information is below.
+    ---------------------
+    {context_str}
+    ---------------------
+    Please be concise and only answer the question given the above context. Your answer should include all relevant scenarios if the question is generic.
+    If these are present you will need to extract the relevant info from the table(s) present.
+    Ensure that the answer includes the proper rows from the markdown table(s) in order to answer the question. Your answer may be contained within multiple tables so do not ignore them all.
+    Think step by step in coming up with your answer and keep your answer short and concise.
+    Query: {query_str}
+    Answer:
+  variables:
+    - context_str
+    - query_str
