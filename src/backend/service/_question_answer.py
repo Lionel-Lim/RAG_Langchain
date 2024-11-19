@@ -5,7 +5,7 @@ from typing_extensions import TypedDict
 from typing import Annotated
 from flask import Config
 from langchain.schema import Document
-from backend.service.vector_store import VectorStore
+from service.vector_store import VectorStore
 import yaml
 
 
@@ -27,7 +27,7 @@ class Chatbot:
         self.graph = self.graph_builder.compile()
 
         # Load the prompt template from prompts.yaml
-        with open("src/backend/src/prompts.yaml", "r") as file:
+        with open("common/prompts.yaml", "r") as file:
             self.prompts = yaml.safe_load(file)
 
     def chatbot(self, state: State):

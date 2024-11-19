@@ -1,7 +1,7 @@
 from flask import Blueprint, request, jsonify, current_app as app
-from backend.service.document_processor import DocumentProcessor
-from backend.service.question_answer import Chatbot
-from backend.service.vector_store import VectorStore
+from service.document_processor import DocumentProcessor
+from service.question_answer import Chatbot
+from service.vector_store import VectorStore
 
 # Create a Blueprint for modular routes
 routes_bp = Blueprint("routes", __name__)

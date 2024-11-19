@@ -1,7 +1,7 @@
 from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from backend.service.vector_store import VectorStore
 from langchain.schema import Document
+from service.vector_store import VectorStore
 import logging
 
 

@@ -9,7 +9,7 @@ from langchain.schema import SystemMessage, HumanMessage, AIMessage
 from langgraph.graph import StateGraph, START, END
 from langgraph.graph.message import add_messages
 
-from backend.service.vector_store import VectorStore
+from service.vector_store import VectorStore
 
 
 class State(TypedDict):

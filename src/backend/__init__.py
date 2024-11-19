@@ -9,10 +9,10 @@ def create_app():
     app = Flask(__name__)
 
     # Debug mode
-    app.debug = False  # Set to False in production
+    app.debug = True  # Set to False in production
 
     # Load configuration settings
-    config_file_path = r"backend/config.yaml"
+    config_file_path = r"./config.yaml"
     config = load_yaml(config_file_path)
 
     # Set environment variable for Google Application Credentials
@@ -24,7 +24,7 @@ def create_app():
     app.config.update(config)
 
     # Register blueprints
-    from backend.routes import routes_bp
+    from routes import routes_bp
 
     app.register_blueprint(routes_bp)
 
