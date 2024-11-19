@@ -5,19 +5,20 @@ from common.utils import load_yaml
 
 
 def create_app():
+    # Create an instance of the Flask class
+    app = Flask(__name__)
+
+    # Debug mode
+    app.debug = False  # Set to False in production
+
     # Load configuration settings
     config_file_path = r"backend/config.yaml"
     config = load_yaml(config_file_path)
 
     # Set environment variable for Google Application Credentials
-    # SERVICE_ACCOUNT_ADDRESS = config["service_account_address"]
-    # os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = SERVICE_ACCOUNT_ADDRESS
-
-    # Create an instance of the Flask class
-    app = Flask(__name__)
-
-    # Debug mode
-    app.debug = True  # Set to False in production
+    if app.debug:
+        SERVICE_ACCOUNT_ADDRESS = config["service_account_address"]
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = SERVICE_ACCOUNT_ADDRESS
 
     # Pass configuration to the app
     app.config.update(config)
