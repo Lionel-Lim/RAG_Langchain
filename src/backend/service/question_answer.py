@@ -26,7 +26,7 @@ class Chatbot:
 
     @staticmethod
     def load_prompts():
-        with open("src/backend/src/prompts.yaml", "r") as file:
+        with open("common/prompts.yaml", "r") as file:
             return yaml.safe_load(file)
 
     def build_graph(self):

@@ -1,17 +1,17 @@
 import os
 import logging
 from flask import Flask
-from src.common.utils import load_yaml
+from common.utils import load_yaml
 
 
 def create_app():
     # Load configuration settings
-    config_file_path = r"src/backend/config.yaml"
+    config_file_path = r"backend/config.yaml"
     config = load_yaml(config_file_path)
 
     # Set environment variable for Google Application Credentials
-    SERVICE_ACCOUNT_ADDRESS = config["service_account_address"]
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = SERVICE_ACCOUNT_ADDRESS
+    # SERVICE_ACCOUNT_ADDRESS = config["service_account_address"]
+    # os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = SERVICE_ACCOUNT_ADDRESS
 
     # Create an instance of the Flask class
     app = Flask(__name__)
@@ -23,7 +23,7 @@ def create_app():
     app.config.update(config)
 
     # Register blueprints
-    from src.backend.routes import routes_bp
+    from backend.routes import routes_bp
 
     app.register_blueprint(routes_bp)
 
