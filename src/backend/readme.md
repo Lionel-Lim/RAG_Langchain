@@ -27,3 +27,5 @@ gcloud run deploy ${APP_NAME} \
   --region asia-southeast1
 """
 
+gcloud compute scp --recurse /Users/dylim/Documents/projects/RAG_Langchain/src/backend/credential vector-db-instance:~
+

@@ -20,7 +20,9 @@ class VectorStore:
         if not client.collection_exists(VECTORSTORE_COLLECTION_NAME):
             client.create_collection(
                 collection_name=VECTORSTORE_COLLECTION_NAME,
-                vectors_config=VectorParams(size=768, distance=Distance.COSINE),
+                vectors_config=VectorParams(
+                    size=768, distance=Distance.COSINE, on_disk=True
+                ),
             )
             logging.info(f"Created new collection: {VECTORSTORE_COLLECTION_NAME}")
         else:
