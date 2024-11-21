@@ -9,12 +9,12 @@ import logging
 
 class VectorStore:
     def __init__(self, config):
-        GOOGLE_CLOUD_EXTERNAL_IP = config["google_cloud_external_ip"]
+        DB_SERVICE_NAME = config["db_service_name"]
         EMBEDDINGS_MODEL = config["embeddings_model"]
         VECTORSTORE_COLLECTION_NAME = config["vectorstore_collection_name"]
 
         embeddings = VertexAIEmbeddings(model_name=EMBEDDINGS_MODEL)
-        client = QdrantClient(url=f"{GOOGLE_CLOUD_EXTERNAL_IP}:6334", prefer_grpc=True)
+        client = QdrantClient(url=f"{DB_SERVICE_NAME}:6334", prefer_grpc=True)
 
         # Create the collection if it does not exist
         if not client.collection_exists(VECTORSTORE_COLLECTION_NAME):

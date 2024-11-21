@@ -13,18 +13,22 @@ services:
     depends_on:
       - qdrant
     #   - redis
+    networks:
+      - app-network
 
-  # frontend:
-  #   build:
-  #     context: ./src/frontend
-  #   container_name: frontend_service
-  #   ports:
-  #     - "8501:8501"
-  #   volumes:
-  #     - ./src/frontend:/app
-  #     - ./src/common:/app/common
-  #   depends_on:
-  #     - backend
+  frontend:
+    build:
+      context: ./src/frontend
+    container_name: frontend_service
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./src/frontend:/app
+      - ./src/common:/app/common
+    depends_on:
+      - backend
+    networks:
+      - app-network
 
   qdrant:
     image: qdrant/qdrant
@@ -35,6 +39,29 @@ services:
       - "6334:6334"
     volumes: 
       - ./qdrant_data:/qdrant/storage
+    networks:
+      - app-network
+    
+  nginx:
+    image: nginx:latest
+    container_name: nginx_proxy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+    - ./src/frontend/nginx/config.d:/etc/nginx/conf.d
+    - ./src/frontend/credential/fullchain.pem:/etc/letsencrypt/live/dylim.dev/fullchain.pem:ro
+    - ./src/frontend/credential/privkey.pem:/etc/letsencrypt/live/dylim.dev/privkey.pem:ro
+
+    depends_on:
+      - backend
+      - frontend
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
 
   # redis:
   #   image: "redis:alpine"
