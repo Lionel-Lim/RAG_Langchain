@@ -1,0 +1,144 @@
+2024-11-21 16:42:34,930 - ERROR - Exception on / [GET] - [in /usr/local/lib/python3.11/site-packages/flask/app.py:875]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/google/cloud/aiplatform/initializer.py", line 356, in project
+    self._set_project_as_env_var_or_google_auth_default()
+  File "/usr/local/lib/python3.11/site-packages/google/cloud/aiplatform/initializer.py", line 97, in _set_project_as_env_var_or_google_auth_default
+    credentials, _ = google.auth.default()
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/google/auth/_default.py", line 697, in default
+    raise exceptions.DefaultCredentialsError(_CLOUD_SDK_MISSING_CREDENTIALS)
+google.auth.exceptions.DefaultCredentialsError: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 915, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1291, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/routes.py", line 14, in initialize_services
+    vector_store = VectorStore(app.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/service/vector_store.py", line 16, in __init__
+    embeddings = VertexAIEmbeddings(model_name=EMBEDDINGS_MODEL)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langchain_google_vertexai/embeddings.py", line 150, in __init__
+    super().__init__(
+  File "/usr/local/lib/python3.11/site-packages/pydantic/main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langchain_google_vertexai/_base.py", line 129, in validate_project
+    self.project = initializer.global_config.project
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/google/cloud/aiplatform/initializer.py", line 359, in project
+    raise GoogleAuthError(project_not_found_exception_str) from exc
+google.auth.exceptions.GoogleAuthError: Unable to find your project. Please provide a project ID by:
+- Passing a constructor argument
+- Using vertexai.init()
+- Setting project using 'gcloud config set project my-project'
+- Setting a GCP environment variable
+- To create a Google Cloud project, please follow guidance at https://developers.google.com/workspace/guides/create-project
+2024-11-21 16:53:13,709 - ERROR - Exception on / [GET] - [in /usr/local/lib/python3.11/site-packages/flask/app.py:875]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/google/cloud/aiplatform/initializer.py", line 356, in project
+    self._set_project_as_env_var_or_google_auth_default()
+  File "/usr/local/lib/python3.11/site-packages/google/cloud/aiplatform/initializer.py", line 97, in _set_project_as_env_var_or_google_auth_default
+    credentials, _ = google.auth.default()
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/google/auth/_default.py", line 697, in default
+    raise exceptions.DefaultCredentialsError(_CLOUD_SDK_MISSING_CREDENTIALS)
+google.auth.exceptions.DefaultCredentialsError: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 915, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1291, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/routes.py", line 14, in initialize_services
+    vector_store = VectorStore(app.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/service/vector_store.py", line 16, in __init__
+    embeddings = VertexAIEmbeddings(model_name=EMBEDDINGS_MODEL)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langchain_google_vertexai/embeddings.py", line 150, in __init__
+    super().__init__(
+  File "/usr/local/lib/python3.11/site-packages/pydantic/main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langchain_google_vertexai/_base.py", line 129, in validate_project
+    self.project = initializer.global_config.project
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/google/cloud/aiplatform/initializer.py", line 359, in project
+    raise GoogleAuthError(project_not_found_exception_str) from exc
+google.auth.exceptions.GoogleAuthError: Unable to find your project. Please provide a project ID by:
+- Passing a constructor argument
+- Using vertexai.init()
+- Setting project using 'gcloud config set project my-project'
+- Setting a GCP environment variable
+- To create a Google Cloud project, please follow guidance at https://developers.google.com/workspace/guides/create-project
+2024-11-21 16:53:20,693 - ERROR - Exception on / [GET] - [in /usr/local/lib/python3.11/site-packages/flask/app.py:875]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/google/cloud/aiplatform/initializer.py", line 356, in project
+    self._set_project_as_env_var_or_google_auth_default()
+  File "/usr/local/lib/python3.11/site-packages/google/cloud/aiplatform/initializer.py", line 97, in _set_project_as_env_var_or_google_auth_default
+    credentials, _ = google.auth.default()
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/google/auth/_default.py", line 697, in default
+    raise exceptions.DefaultCredentialsError(_CLOUD_SDK_MISSING_CREDENTIALS)
+google.auth.exceptions.DefaultCredentialsError: Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 915, in full_dispatch_request
+    rv = self.preprocess_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/flask/app.py", line 1291, in preprocess_request
+    rv = self.ensure_sync(before_func)()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/routes.py", line 14, in initialize_services
+    vector_store = VectorStore(app.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/service/vector_store.py", line 16, in __init__
+    embeddings = VertexAIEmbeddings(model_name=EMBEDDINGS_MODEL)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langchain_google_vertexai/embeddings.py", line 150, in __init__
+    super().__init__(
+  File "/usr/local/lib/python3.11/site-packages/pydantic/main.py", line 212, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langchain_google_vertexai/_base.py", line 129, in validate_project
+    self.project = initializer.global_config.project
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/google/cloud/aiplatform/initializer.py", line 359, in project
+    raise GoogleAuthError(project_not_found_exception_str) from exc
+google.auth.exceptions.GoogleAuthError: Unable to find your project. Please provide a project ID by:
+- Passing a constructor argument
+- Using vertexai.init()
+- Setting project using 'gcloud config set project my-project'
+- Setting a GCP environment variable
+- To create a Google Cloud project, please follow guidance at https://developers.google.com/workspace/guides/create-project

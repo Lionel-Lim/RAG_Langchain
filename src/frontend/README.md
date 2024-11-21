@@ -11,3 +11,7 @@ Nginx Configuration File
 
 Located at src/frontend/ngix/config
 
+sudo mkdir src/frontend/credential
+
+sudo cp /etc/letsencrypt/live/dylim.dev/fullchain.pem src/frontend/credential
+sudo cp /etc/letsencrypt/live/dylim.dev/privkey.pem src/frontend/credential

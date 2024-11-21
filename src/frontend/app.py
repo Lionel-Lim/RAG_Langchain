@@ -20,7 +20,7 @@ st.markdown(
 screen_height = streamlit_js_eval(js_expressions="screen.height", key="HEIGHT")
 
 # Define the backend URL
-backend_url = "http://34.142.165.16:4000"
+backend_url = "http://backend_service:4000/"
 
 
 # Define the pages
