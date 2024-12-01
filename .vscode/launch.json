@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "python",
+        "request": "launch",
+        "name": "Debug pdf_split_test.py",
+        "program": "${workspaceFolder}/src/backend/test/pdf_split_test.py",
+        "console": "integratedTerminal",
+        "cwd": "${workspaceFolder}/src/backend",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}/src/backend"
+        }
+      }
+    ]
+  }

@@ -16,9 +16,9 @@ def create_app():
     config = load_yaml(config_file_path)
 
     # Set environment variable for Google Application Credentials
-    if app.debug:
-        SERVICE_ACCOUNT_ADDRESS = config["service_account_address"]
-        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = SERVICE_ACCOUNT_ADDRESS
+    # if app.debug:
+    SERVICE_ACCOUNT_ADDRESS = config["service_account_address"]
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = SERVICE_ACCOUNT_ADDRESS
 
     # Pass configuration to the app
     app.config.update(config)

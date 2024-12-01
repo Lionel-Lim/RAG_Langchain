@@ -12,7 +12,7 @@ routes_bp = Blueprint("routes", __name__)
 def initialize_services():
     global vector_store, document_processor, chatbot
     vector_store = VectorStore(app.config)
-    document_processor = DocumentProcessor(vector_store)
+    document_processor = DocumentProcessor()
     chatbot = Chatbot(app.config, vector_store)
 
 
@@ -37,7 +37,7 @@ def add_document():
         if file and file.filename.endswith(".pdf"):
             # Process the document using the document processor
             app.logger.info(f"Processing document: {file.filename}")
-            result = document_processor.process_document(file)
+            result = document_processor.process_document(vector_store, file)
 
             if result:
                 app.logger.info(f"Document {file.filename} processed successfully.")
