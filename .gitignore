@@ -88,7 +88,8 @@ env.bak/
 venv.bak/
 
 # Credentials
-credential
+**/credential/*.json
+**/credential/*.pem
 
 # Test
 **/test/**/*.png
