@@ -38,3 +38,27 @@ image_to_text_prompt:
   variables:
     - context_text
     - image_data
+text_summarization_prompt:
+  template: |
+    You are an expert in the Architecture, Engineering, and Construction (AEC) industry.
+    Your task is to generate a concise summary of the provided text.
+
+    Please read the following text and create a summary that captures the key points and main ideas. 
+    Your summary should be clear, concise, and relevant to the given context. 
+    Consider the main themes, arguments, and conclusions presented in the text.
+    ---------------------
+    Context before text: {context_text_before}
+    ---------------------
+    ---------------------
+    Text: {text_data}
+    ---------------------
+    ---------------------
+    Context after text: {context_text_after}
+    ---------------------
+
+    Generate a summary of the text, highlighting the main points and key information. 
+    Your summary should be comprehensive and capture the essence of the text in a concise manner.
+  variables:
+    - context_text_before
+    - context_text_after
+    - text_data

@@ -49,7 +49,7 @@ class TextElement(Element):
 
 class Page(BaseModel):
     page_number: int
-    elements: List[Element] = []
+    elements: List[Union[ImageElement, TableElement, TextElement]] = []
     metadata: Dict[str, Any] = {}
     summary: str = ""
 

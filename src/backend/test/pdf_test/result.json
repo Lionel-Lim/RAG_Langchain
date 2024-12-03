@@ -1,0 +1,1714 @@
+{
+    "file_name": "test_1.pdf",
+    "file_size": 5832105,
+    "page_numbers": 0,
+    "pages": [
+        {
+            "page_number": 1,
+            "elements": [
+                {
+                    "element_id": 0,
+                    "type": "paragraph",
+                    "text": "CORENET X",
+                    "summary": ""
+                },
+                {
+                    "element_id": 1,
+                    "type": "paragraph",
+                    "text": "A One-Stop Integrated Digital Shopfront for Regulatory Processes",
+                    "summary": ""
+                },
+                {
+                    "element_id": 2,
+                    "type": "paragraph",
+                    "text": "Code of Practice",
+                    "summary": ""
+                },
+                {
+                    "element_id": 3,
+                    "type": "paragraph",
+                    "text": "First Edition | Published on 2023-09",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 2,
+            "elements": [
+                {
+                    "element_id": 4,
+                    "type": "heading1",
+                    "text": "How to use this Code of Practice",
+                    "summary": ""
+                },
+                {
+                    "element_id": 5,
+                    "type": "paragraph",
+                    "text": "Note: CORENET X is developed through Agile Methodology and sections / requirements in this COP will be updated progressively andits technological enhancements will be made available in phases.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 6,
+                    "type": "figure",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/2_6_figure.png",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 3,
+            "elements": [
+                {
+                    "element_id": 7,
+                    "type": "heading1",
+                    "text": "SECTION 1",
+                    "summary": ""
+                },
+                {
+                    "element_id": 8,
+                    "type": "heading1",
+                    "text": "Introduction to CORENET X",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 4,
+            "elements": [
+                {
+                    "element_id": 9,
+                    "type": "paragraph",
+                    "text": "INTRODUCTION TO CX GENERAL REQUIREMENTS \u00b7 REGULATORY AGENCIES \u00b7 \u00b7 KEY GATEWAYS \u00b7 \u00b7 OTHER BUILDING WORKS \u00b7 BIM DATA REPRESENTATION",
+                    "summary": ""
+                },
+                {
+                    "element_id": 10,
+                    "type": "heading1",
+                    "text": "1 Introduction to CORENET X (CX)",
+                    "summary": ""
+                },
+                {
+                    "element_id": 11,
+                    "type": "heading1",
+                    "text": "Page",
+                    "summary": ""
+                },
+                {
+                    "element_id": 12,
+                    "type": "heading1",
+                    "text": "Overview of CORENET X",
+                    "summary": ""
+                },
+                {
+                    "element_id": 13,
+                    "type": "list",
+                    "text": "\u2022 About CORENET X 8\u2022 Today\u2019s Separate and Concurrent Approval Process 9\u2022 Tomorrow\u2019s Envisaged Streamlined Regulatory Approval 10Process",
+                    "summary": ""
+                },
+                {
+                    "element_id": 14,
+                    "type": "paragraph",
+                    "text": "CORENET X User Journey 11",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 5,
+            "elements": [
+                {
+                    "element_id": 15,
+                    "type": "heading1",
+                    "text": "Section 1: Introduction to CORENET XOverview of CORENET X",
+                    "summary": ""
+                },
+                {
+                    "element_id": 16,
+                    "type": "heading1",
+                    "text": "A future ecosystemof Regulatory Approval ofBuilding Works that accelerates thetransformation of the Construction Industry",
+                    "summary": ""
+                },
+                {
+                    "element_id": 17,
+                    "type": "heading1",
+                    "text": "About",
+                    "summary": ""
+                },
+                {
+                    "element_id": 18,
+                    "type": "paragraph",
+                    "text": "Harnessing the power of digitalisation and technology, CORENET X will allow Qualified Persons (QPs, i.e. professional engineersand registered architects) to submit a three-dimensional model of a development or building - created and developed digitallythrough Building Information Modelling (BIM) to the regulatory agencies.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 19,
+                    "type": "paragraph",
+                    "text": "It allows the project team, which includes the QPs, to collaborate and review their designs in the model together, detectpossible major conflicts before construction, and produce a coordinated BIM model for submission and regulatory approval. Itchanges the current practice of QPs dealing separately with multiple regulatory agencies, and producing different versions ofbuilding plans thereafter.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 20,
+                    "type": "paragraph",
+                    "text": "Led by BCA and URA and supported by GovTech, CORENET X was developed in close collaboration with the other publicagencies\u00b9 and leading built environment professionals, firms, and Trade Associations and Chambers (TACs). It is slated forimplementation by the end of 2023.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 21,
+                    "type": "paragraph",
+                    "text": "\u00b9 CORENET X comprises of the following public agencies: BCA, URA, GovTech, HDB, JTC, LTA, NEA, NParks, SCDF and SLA.",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 6,
+            "elements": [
+                {
+                    "element_id": 22,
+                    "type": "heading1",
+                    "text": "Section 1: Introduction to CORENET XOverview of CORENET X",
+                    "summary": ""
+                },
+                {
+                    "element_id": 23,
+                    "type": "paragraph",
+                    "text": "INTRODUCTION TO CX GENERAL REQUIREMENTS \u00b7 REGULATORY AGENCIES \u00b7 \u00b7 KEY GATEWAYS \u00b7 \u00b7 OTHER BUILDING WORKS \u00b7 BIM DATA REPRESENTATION",
+                    "summary": ""
+                },
+                {
+                    "element_id": 24,
+                    "type": "heading1",
+                    "text": "Today\u2019s Separate and ConcurrentRegulatory Approval Process",
+                    "summary": ""
+                },
+                {
+                    "element_id": 25,
+                    "type": "figure",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/6_25_figure.png",
+                    "summary": ""
+                },
+                {
+                    "element_id": 26,
+                    "type": "heading1",
+                    "text": "Industry",
+                    "summary": ""
+                },
+                {
+                    "element_id": 27,
+                    "type": "heading1",
+                    "text": "upstream",
+                    "summary": ""
+                },
+                {
+                    "element_id": 28,
+                    "type": "list",
+                    "text": "\u2022 Plans are prepared bydifferent professionalsindependently",
+                    "summary": ""
+                },
+                {
+                    "element_id": 29,
+                    "type": "list",
+                    "text": "\u2022 Plans are submittedseparately to differentagencies at differentmilestones concurrently",
+                    "summary": ""
+                },
+                {
+                    "element_id": 30,
+                    "type": "heading1",
+                    "text": "Agencies",
+                    "summary": ""
+                },
+                {
+                    "element_id": 31,
+                    "type": "paragraph",
+                    "text": "Construction",
+                    "summary": ""
+                },
+                {
+                    "element_id": 32,
+                    "type": "list",
+                    "text": "\u2022 Each of the 7 agencies has a differentregulatory mandate",
+                    "summary": ""
+                },
+                {
+                    "element_id": 33,
+                    "type": "list",
+                    "text": "\u2022 Comments from one agency may leadto resubmission/ amendment toothers",
+                    "summary": ""
+                },
+                {
+                    "element_id": 34,
+                    "type": "list",
+                    "text": "\u2022 Approved plans can be conflicting;no single integrated view of theapproved plan",
+                    "summary": ""
+                },
+                {
+                    "element_id": 35,
+                    "type": "paragraph",
+                    "text": "downstream",
+                    "summary": ""
+                },
+                {
+                    "element_id": 36,
+                    "type": "list",
+                    "text": "\u2022 Plans contain conflictsthat need to be resolvedduring construction",
+                    "summary": ""
+                },
+                {
+                    "element_id": 37,
+                    "type": "list",
+                    "text": "\u2022 Rectifications = AbortiveWorks",
+                    "summary": ""
+                },
+                {
+                    "element_id": 38,
+                    "type": "list",
+                    "text": "\u2022 Delayed issuance ofTOP/CSC",
+                    "summary": ""
+                },
+                {
+                    "element_id": 39,
+                    "type": "paragraph",
+                    "text": "A key impetus for change is because of today\u2019s fragmented approval process. In today\u2019s process, the industry preparesubmissions independently, and they then submit these plans separately to the different regulatory agencies.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 40,
+                    "type": "paragraph",
+                    "text": "This silo working environment is not conducive for coordinated design and regulatory reviews upstream, which often results initerative submissions as well as conflicting or disjointed building information downstream during construction. This leads toabortive works, or resubmissions which delays TOP/CSC, ultimately affecting construction productivity.",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 7,
+            "elements": [
+                {
+                    "element_id": 41,
+                    "type": "heading1",
+                    "text": "Section 1: Introduction to CORENET XOverview of CORENET X",
+                    "summary": ""
+                },
+                {
+                    "element_id": 42,
+                    "type": "paragraph",
+                    "text": "INTRODUCTION TO CX GENERAL REQUIREMENTS \u00b7 REGULATORY AGENCIES \u00b7 \u00b7 KEY GATEWAYS \u00b7 \u00b7 OTHER BUILDING WORKS \u00b7 BIM DATA REPRESENTATION",
+                    "summary": ""
+                },
+                {
+                    "element_id": 43,
+                    "type": "paragraph",
+                    "text": "Tomorrow\u2019s Envisaged StreamlinedRegulatory Approval Process",
+                    "summary": ""
+                },
+                {
+                    "element_id": 44,
+                    "type": "figure",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/7_44_figure.png",
+                    "summary": ""
+                },
+                {
+                    "element_id": 45,
+                    "type": "heading1",
+                    "text": "Industry",
+                    "summary": ""
+                },
+                {
+                    "element_id": 46,
+                    "type": "heading1",
+                    "text": "upstream",
+                    "summary": ""
+                },
+                {
+                    "element_id": 47,
+                    "type": "list",
+                    "text": "\u2022 Industry will need tocollaborate upfront withone another prior tosubmission",
+                    "summary": ""
+                },
+                {
+                    "element_id": 48,
+                    "type": "heading1",
+                    "text": "Agencies",
+                    "summary": ""
+                },
+                {
+                    "element_id": 49,
+                    "type": "list",
+                    "text": "\u2022 The Qualified Persons(QPs) will submitCoordinated BIM Modelsat the Gateways insteadof submittingindependently",
+                    "summary": ""
+                },
+                {
+                    "element_id": 50,
+                    "type": "paragraph",
+                    "text": "Construction",
+                    "summary": ""
+                },
+                {
+                    "element_id": 51,
+                    "type": "list",
+                    "text": "\u2022 Over 20 approval gateways have nowbeen streamlined to 3 Key Gateways:Design, Construction, Completion",
+                    "summary": ""
+                },
+                {
+                    "element_id": 52,
+                    "type": "list",
+                    "text": "\u2022 These gateways are major submissionmilestones, where the submitteddesign needs to comply with cross-agencies\u2019 statutory requirements.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 53,
+                    "type": "list",
+                    "text": "\u2022 Agencies will review the CoordinatedBIM models together in a commondata environment.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 54,
+                    "type": "paragraph",
+                    "text": "downstream",
+                    "summary": ""
+                },
+                {
+                    "element_id": 55,
+                    "type": "paragraph",
+                    "text": "\u2022 Construction rectificationsarising from competingregulatory requirementswould be minimised asmajor conflicts would havebeen surfaced and resolvedupstream prior toconstruction.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 56,
+                    "type": "paragraph",
+                    "text": "We wanted to radically rethink how the regulatory services can be delivered in a project centric manner, instead of today\u2019s silomanner. In tomorrow\u2019s process, industry will submit coordinated BIM models to the agencies for review, instead of submittingindependently. The earlier 20 over approval gateways have now been streamlined to 3 key gateways.",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 8,
+            "elements": [
+                {
+                    "element_id": 57,
+                    "type": "paragraph",
+                    "text": "INTRODUCTION TO CX GENERAL REQUIREMENTS \u00b7 REGULATORY AGENCIES \u00b7 \u00b7 KEY GATEWAYS \u00b7 \u00b7 OTHER BUILDING WORKS \u00b7 BIM DATA REPRESENTATION",
+                    "summary": ""
+                },
+                {
+                    "element_id": 58,
+                    "type": "heading1",
+                    "text": "CORENET X User Journey",
+                    "summary": ""
+                },
+                {
+                    "element_id": 59,
+                    "type": "figure",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/8_59_figure.png",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 9,
+            "elements": [
+                {
+                    "element_id": 60,
+                    "type": "paragraph",
+                    "text": "SECTION 2General Requirements",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 10,
+            "elements": [
+                {
+                    "element_id": 61,
+                    "type": "paragraph",
+                    "text": "INTRODUCTION TO CX GENERAL REQUIREMENTS \u00b7 REGULATORY AGENCIES \u00b7 \u00b7 KEY GATEWAYS \u00b7 \u00b7 OTHER BUILDING WORKS \u00b7 BIM DATA REPRESENTATION",
+                    "summary": ""
+                },
+                {
+                    "element_id": 62,
+                    "type": "heading1",
+                    "text": "2 General Requirements",
+                    "summary": ""
+                },
+                {
+                    "element_id": 63,
+                    "type": "heading1",
+                    "text": "Page",
+                    "summary": ""
+                },
+                {
+                    "element_id": 64,
+                    "type": "index",
+                    "text": "Terms of Definitions 14QP\u2019s Statutory Responsibilities 15Multi-Disciplinary Coordination\u2022 Clash Detection 15\u2022 Alignment of Levels and Zones 16Typical Submission Package at a Single Gateway 17\u2022 New and Amendment Submission Workflow 18IFC-SG Model Preparation\u2022 Preparing Models for Submission (General) 20o IFC-SG Mapping 21o Geo-Referencing 23o Revit 24o Archicad 28o Tekla 32\u2022 3rd Party Application(s) to help with Preparation of IFC-SG Modelso IFC-SG Validator 39o DiRoots 42\u2022 List of Recommended IFC Viewers 45",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 11,
+            "elements": [
+                {
+                    "element_id": 65,
+                    "type": "heading1",
+                    "text": "Section 2: General Requirements",
+                    "summary": ""
+                },
+                {
+                    "element_id": 66,
+                    "type": "heading1",
+                    "text": "Terms and Definitions",
+                    "summary": ""
+                },
+                {
+                    "element_id": 67,
+                    "type": "paragraph",
+                    "text": "INTRODUCTION TO CX GENERAL REQUIREMENTS \u00b7 REGULATORY AGENCIES \u00b7 \u00b7 KEY GATEWAYS \u00b7 \u00b7 OTHER BUILDING WORKS \u00b7 BIM DATA REPRESENTATION",
+                    "summary": ""
+                },
+                {
+                    "element_id": 68,
+                    "type": "paragraph",
+                    "text": "While the regulatory approval process is being redesigned to improve the current user experience to navigate across multipleregulatory agencies, the regulatory agencies\u2019 respective mandate and regime remains unchanged.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 69,
+                    "type": "paragraph",
+                    "text": "The current Development Control (\u201cDC\u201d) and Building Plan (\u201cBP\u201d) submissions, typically referred to by the agencies andindustry, are now being mapped and consolidated under the Gateways of the new process. The amount of information requiredat the respective Gateways is also being recalibrated across the regulatory agencies to ensure that it is aligned with the intent ofeach Gateway.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 70,
+                    "type": "heading1",
+                    "text": "Terms and Definitions",
+                    "summary": ""
+                },
+                {
+                    "element_id": 71,
+                    "type": "paragraph",
+                    "text": "For the purpose of this Code of Practice, the following definitions shall apply:",
+                    "summary": ""
+                },
+                {
+                    "element_id": 72,
+                    "type": "table",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/11_72_table.png",
+                    "raw_text": "<table id='16' style='font-size:14px'><tr><td>Term</td><td>Definitions</td></tr><tr><td>RABW</td><td>Abbreviation for \u201cRegulatory Approval Process for Building Works\u201d, and refers to the new process involving 3 key sequential submission gateways to all Agencies for one collective and coordinated approval at each gateway.</td></tr><tr><td>Gateways</td><td>Major submission milestones in CORENET X, where the submission needs to comply with multiple agencies\u2019 statutory requirements at each Gateway. \u2022 Multiple Agency requirements listed under each regulatory agency can be found here. \u2022 Multiple Key Gateway requirements listed under each gateway can be found here.</td></tr><tr><td>Supporting Mechanisms</td><td>Similar to today, there are 3 supporting mechanisms will continue to complement the approval process: 1. Pre-Submission Consultation \u2022 Pre-submission consultation will continue to be available for industry to consult or seek clarification prior to submission. 2. Waivers \u2022 Where necessary, the industry may apply for waiver under the respective Act and Regulations and the respective agency will assess the applications accordingly. 3. Escalation Mechanism \u2022 Industry can table their case to seek resolution on inter-agency regulatory conflicts at the Inter- agency Coordinating Committee (IACC).</td></tr><tr><td>Federated Model</td><td>Combined Building Information Model that compiles multiple models from different disciplines or sections of the project into a single, complete model of the project. \u2022 Federated models support concurrent authorship of different aspects of the project by multiple parties. \u2022 Federated models also support multi-disciplinary coordination as models are geo-referenced to coordinates from the Singapore SVY21 coordinate system (EPSG: 3414) for Easing and Northing (x,y) and Singapore Height Datum (SHD) for Height (z).</td></tr><tr><td>IFC-SG</td><td>New representations for local regulatory requirements, in the Industry Foundation Classes (IFC) openBIM standard. More information of the mapping and configuration files for IFC-SG can be found here.</td></tr><tr><td>Level of Details</td><td>As long as relevant IFC-SG data requirements are embedded in the respective BIM components and minimum dimensions represented, BIM components do not need to replicate their real-life equivalent. For example, trees can be represented as a lollipop object as long as IFC-SG parameters like \u201cGirth\u201d, \u201cHeight\u201d and \u201cStatus\u201d are represented.</td></tr><tr><td>Non-BIM submissions</td><td>Besides BIM submissions in the IFC-SG format, CORENET X will be able to accept non-BIM submissions.</td></tr><tr><td>Supplementary Documents</td><td>CORENET X will be able to accept non-BIM documentations that accompany each project team\u2019s submission of IFC-SG models (e.g. design calculation reports, 2D detail drawings)</td></tr></table>",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 12,
+            "elements": [
+                {
+                    "element_id": 73,
+                    "type": "paragraph",
+                    "text": "INTRODUCTION TO CX GENERAL REQUIREMENTS \u00b7 REGULATORY AGENCIES \u00b7 \u00b7 KEY GATEWAYS \u00b7 \u00b7 OTHER BUILDING WORKS \u00b7 BIM DATA REPRESENTATION",
+                    "summary": ""
+                },
+                {
+                    "element_id": 74,
+                    "type": "heading1",
+                    "text": "QP\u2019s Statutory Responsibilities",
+                    "summary": ""
+                },
+                {
+                    "element_id": 75,
+                    "type": "paragraph",
+                    "text": "While the regulatory approval process is being redesigned to improve the current user experience to navigate across multipleregulatory agencies, the regulatory agencies\u2019 respective mandate and regime remains unchanged. Hence, the statutoryresponsibilities of the appointed QPs under the respective Acts and Regulations remains unchanged.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 76,
+                    "type": "paragraph",
+                    "text": "Under the RABW, part of the process requires joint submission by the relevant QPs within the project teams to the relevantregulatory agencies. To ensure clear delineation of responsibilities, the developer (or whoever is required under the respectiveActs and Regulations) needs to first appoint the QP for the respective areas of work at the start of a project. The appointed QPwill then be responsible for the relevant aspects of the submission.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 77,
+                    "type": "heading1",
+                    "text": "Multi-Disciplinary Coordination",
+                    "summary": ""
+                },
+                {
+                    "element_id": 78,
+                    "type": "heading1",
+                    "text": "Clash Detection",
+                    "summary": ""
+                },
+                {
+                    "element_id": 79,
+                    "type": "paragraph",
+                    "text": "Prior to submission, models by the relevant disciplines should be coordinated, and the project team should ensure that in-principle, basic / key components from each discipline do not clash with one another, as indicated in the componentclashes matrix below.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 80,
+                    "type": "paragraph",
+                    "text": "S2 \u2013 Fig 1 : Design Clash",
+                    "summary": ""
+                },
+                {
+                    "element_id": 81,
+                    "type": "paragraph",
+                    "text": "Source: https://www.bimcollab.com/en/products/bimcollab-zoom-b/",
+                    "summary": ""
+                },
+                {
+                    "element_id": 82,
+                    "type": "chart",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/12_82_chart.png",
+                    "summary": ""
+                },
+                {
+                    "element_id": 83,
+                    "type": "paragraph",
+                    "text": "Note: Clash tolerance for specialist equipment such as an active chilled beam is acceptable.",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 13,
+            "elements": [
+                {
+                    "element_id": 84,
+                    "type": "paragraph",
+                    "text": "INTRODUCTION TO CX GENERAL REQUIREMENTS \u00b7 REGULATORY AGENCIES \u00b7 \u00b7 KEY GATEWAYS \u00b7 \u00b7 OTHER BUILDING WORKS \u00b7 BIM DATA REPRESENTATION",
+                    "summary": ""
+                },
+                {
+                    "element_id": 85,
+                    "type": "heading1",
+                    "text": "Multi-Disciplinary Coordination",
+                    "summary": ""
+                },
+                {
+                    "element_id": 86,
+                    "type": "heading1",
+                    "text": "Alignment of Levels and Zones Across All Disciplines\u2019 Models",
+                    "summary": ""
+                },
+                {
+                    "element_id": 87,
+                    "type": "paragraph",
+                    "text": "Besides discipline-specific models, it may be necessary to divide the project into separate parts, zones and levels for bettermanagement of the model sizes, especially for larger and more complex projects. Models from all disciplines MUST namelevels and zones identically.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 88,
+                    "type": "list",
+                    "text": "\u27a2 Only multi-disciplinary models with identical names and \u201cZ\u201d values for levels will be processed by ProcessingOfficers in the CORENET X Collaboration Platform.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 89,
+                    "type": "list",
+                    "text": "\u27a2 Refer to Geo-Referencing on Page 23.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 90,
+                    "type": "figure",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/13_90_figure.png",
+                    "summary": ""
+                },
+                {
+                    "element_id": 91,
+                    "type": "paragraph",
+                    "text": "S2 \u2013 Fig 4: Multi-Disciplinary Coordination",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 14,
+            "elements": [
+                {
+                    "element_id": 92,
+                    "type": "paragraph",
+                    "text": "INTRODUCTION TO CX GENERAL REQUIREMENTS \u00b7 REGULATORY AGENCIES \u00b7 \u00b7 KEY GATEWAYS \u00b7 \u00b7 OTHER BUILDING WORKS \u00b7 BIM DATA REPRESENTATION",
+                    "summary": ""
+                },
+                {
+                    "element_id": 93,
+                    "type": "heading1",
+                    "text": "Typical Submission Package at a Single Gateway",
+                    "summary": ""
+                },
+                {
+                    "element_id": 94,
+                    "type": "paragraph",
+                    "text": "The table below shows a sample of what is inside a typical CORENET X submission package for Construction Gateway.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 95,
+                    "type": "paragraph",
+                    "text": "The purpose of this illustration is to highlight that not everything in CORENET X will have to be modelled in 3D. For practicalreasons, it may not make sense to expect complex details to be modelled, and hence the submission package will also consistof other supporting documents such as 2D detailed drawings, design calculation reports etc.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 96,
+                    "type": "paragraph",
+                    "text": "We have highlighted in the yellow boxes examples of what may be required. Note that this differs across project types and is notexhaustive.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 97,
+                    "type": "table",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/14_97_table.png",
+                    "raw_text": "<table id='47' style='font-size:18px'><tr><td>Examples</td><td>Architecture</td><td>C&S Engineering</td><td>M&E Engineering</td></tr><tr><td rowspan=\"2\">IFC-SG models, all geo- referenced</td><td>\u2022 Blk 1 Model \u2022 Blk 2 Model \u2022 Podium Model</td><td>\u2022 Blk 1 Model \u2022 Blk 2 Model \u2022 Podium Model \u2022 Substructure Model (For foundation and piling works) Note: For projects which did not opt for Piling Gateway (G1.5), the project team will need to include all permanent foundation works in Construction Gateway (G2).</td><td>\u2022 Blk 1 Model \u2022 Blk 2 Model \u2022 Podium Model</td></tr><tr><td colspan=\"3\">As mentioned on Page 16, models from all disciplines MUST name levels and zones identically.</td></tr><tr><td>2D drawings</td><td>\u2022 Details (e.g. household / storey shelter documentation and detailing) \u2022 External Works</td><td>\u2022 General notes \u2022 Special details (e.g. slab reinforcement detailing, complex structure detailing, precast joints, prestressed details, steel connections) \u2022 External Works</td><td>\u2022 Details (e.g. cooling tower documentation and detailing) \u2022 External Works</td></tr><tr><td>Design Calculation reports</td><td>-</td><td>Design calculation reports from QP, AC, [QP(Geo) & AC (Geo), if needed]</td><td>-</td></tr><tr><td>Additional supporting documents</td><td>\u2022 B-Score BDAS form \u2022 Public Communication Plans (if applicable)</td><td>\u2022 B-Score BDAS form Supporting documents for piling works: \u2022 Site Investigation report in pdf & AGS format \u2022 Impact assessment report \u2022 Topography</td><td>\u2022 B-Score BDAS form \u2022 Pollution Control Study (PCS) reports</td></tr><tr><td>Pre-consultation document</td><td>-</td><td>Completion letter of pre-consultation (for complex structure only)</td><td>-</td></tr></table>",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 15,
+            "elements": [
+                {
+                    "element_id": 98,
+                    "type": "paragraph",
+                    "text": "INTRODUCTION TO CX GENERAL REQUIREMENTS \u00b7 REGULATORY AGENCIES \u00b7 \u00b7 KEY GATEWAYS \u00b7 \u00b7 OTHER BUILDING WORKS \u00b7 BIM DATA REPRESENTATION",
+                    "summary": ""
+                },
+                {
+                    "element_id": 99,
+                    "type": "heading1",
+                    "text": "New Submission",
+                    "summary": ""
+                },
+                {
+                    "element_id": 100,
+                    "type": "figure",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/15_100_figure.png",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 16,
+            "elements": [
+                {
+                    "element_id": 101,
+                    "type": "paragraph",
+                    "text": "INTRODUCTION TO CX GENERAL REQUIREMENTS \u00b7 REGULATORY AGENCIES \u00b7 \u00b7 KEY GATEWAYS \u00b7 \u00b7 OTHER BUILDING WORKS \u00b7 BIM DATA REPRESENTATION",
+                    "summary": ""
+                },
+                {
+                    "element_id": 102,
+                    "type": "heading1",
+                    "text": "Amendment Submission",
+                    "summary": ""
+                },
+                {
+                    "element_id": 103,
+                    "type": "heading1",
+                    "text": "Joint Submission Workflow",
+                    "summary": ""
+                },
+                {
+                    "element_id": 104,
+                    "type": "figure",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/16_104_figure.png",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 17,
+            "elements": [
+                {
+                    "element_id": 105,
+                    "type": "paragraph",
+                    "text": "INTRODUCTION TO CX GENERAL REQUIREMENTS \u00b7 REGULATORY AGENCIES \u00b7 \u00b7 KEY GATEWAYS \u00b7 \u00b7 OTHER BUILDING WORKS \u00b7 BIM DATA REPRESENTATION",
+                    "summary": ""
+                },
+                {
+                    "element_id": 106,
+                    "type": "heading1",
+                    "text": "Preparing Models for Submission",
+                    "summary": ""
+                },
+                {
+                    "element_id": 107,
+                    "type": "heading1",
+                    "text": "Model Size",
+                    "summary": ""
+                },
+                {
+                    "element_id": 108,
+                    "type": "paragraph",
+                    "text": "Each model should not exceed 800 MB, and be submitted by parts (i.e. 1 block per file). If a part model exceeds800MB, the part model should be split into smaller files. Files compiled in zip folders are not accepted.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 109,
+                    "type": "paragraph",
+                    "text": "For huge developments that need to arrange their projects into different packages, please carry out a pre-submissionconsultation to seek agencies\u2019 concurrence for the proposal.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 110,
+                    "type": "paragraph",
+                    "text": "To help all project members understand the timing and delivery of data for every CORENET X submission, it is important todefine the submission preparation and delivery details in the BIM Execution Plan. For more information, please refer to theBIM Essential Guide for BIM Execution Plan here.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 111,
+                    "type": "heading1",
+                    "text": "Setting up Project Information",
+                    "summary": ""
+                },
+                {
+                    "element_id": 112,
+                    "type": "paragraph",
+                    "text": "The Project Title, Address, QP Name & Professional Registration Number, and if applicable, Name & ProfessionalRegistration Number of Specialist QPs will be provided on the CORENET X Portal.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 113,
+                    "type": "heading1",
+                    "text": "Modelling in IFC-SG",
+                    "summary": ""
+                },
+                {
+                    "element_id": 114,
+                    "type": "list",
+                    "text": "\u2022 Most of the IFC parameter requirements are based on the international IFC 4 standards. A set of IFC-SG standards wasdeveloped to address specific regulatory requirements in Singapore that currently cannot be found in theinternational IFC standards.\u2022 There are also IFC-SG parameters that had been defined & standardized to incorporate the current 2D drawingsinformation and embedded in 3D models.\u2022 A complete set of IFC-SG model shall consist of elements as described in Section 4 of this COP. For example, astructural model can comprise of the following :",
+                    "summary": ""
+                },
+                {
+                    "element_id": 115,
+                    "type": "list",
+                    "text": "o Piles o Wallso Footings / Pilecaps o Slabso Beams o Staircaseso Columns o Boreholes",
+                    "summary": ""
+                },
+                {
+                    "element_id": 116,
+                    "type": "list",
+                    "text": "\u2022 Industry practitioners shall use the IFC-SG Resource Kit to convert Native BIM models into IFC-SG models and verify nodata loss occurred during the exporting.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 117,
+                    "type": "list",
+                    "text": "\u2022 Details can be represented in 2D to supplement the IFC-SG model, such as:",
+                    "summary": ""
+                },
+                {
+                    "element_id": 118,
+                    "type": "paragraph",
+                    "text": "o Irregular pilecaps, raft foundation, slab elements, household shelter / storey shelter elements, transfer plates,precast elements, prestress elements, PPVC modules, steel connections.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 119,
+                    "type": "paragraph",
+                    "text": "Link:IFC-SG Resource Kit",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 18,
+            "elements": [
+                {
+                    "element_id": 120,
+                    "type": "paragraph",
+                    "text": "INTRODUCTION TO CX GENERAL REQUIREMENTS \u00b7 REGULATORY AGENCIES \u00b7 \u00b7 KEY GATEWAYS \u00b7 \u00b7 OTHER BUILDING WORKS \u00b7 BIM DATA REPRESENTATION",
+                    "summary": ""
+                },
+                {
+                    "element_id": 121,
+                    "type": "heading1",
+                    "text": "Preparing Models for Submission",
+                    "summary": ""
+                },
+                {
+                    "element_id": 122,
+                    "type": "heading1",
+                    "text": "Reading the IFC-SG Mapping",
+                    "summary": ""
+                },
+                {
+                    "element_id": 123,
+                    "type": "list",
+                    "text": "\u2713 Know the element and its category\u2713 What system it belongs to?\u2713 What are the IFC Parameters thatneeds to map into it?\u2713 To what Agency it will be submitted?",
+                    "summary": ""
+                },
+                {
+                    "element_id": 124,
+                    "type": "heading1",
+                    "text": "Setting up the Model",
+                    "summary": ""
+                },
+                {
+                    "element_id": 125,
+                    "type": "paragraph",
+                    "text": "Upgrading the currentin-house BIM Templateinto CORENET XTemplate",
+                    "summary": ""
+                },
+                {
+                    "element_id": 126,
+                    "type": "list",
+                    "text": "\u2713 Study the existingobject properties",
+                    "summary": ""
+                },
+                {
+                    "element_id": 127,
+                    "type": "list",
+                    "text": "\u2713 Know the propertiesthat needs to beedited in-line withthe IFC Configurator",
+                    "summary": ""
+                },
+                {
+                    "element_id": 128,
+                    "type": "paragraph",
+                    "text": "Link:IFC-SG Resource Kit",
+                    "summary": ""
+                },
+                {
+                    "element_id": 129,
+                    "type": "figure",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/18_129_figure.png",
+                    "summary": ""
+                },
+                {
+                    "element_id": 130,
+                    "type": "paragraph",
+                    "text": "S2 \u2013 Fig 5: IFC-SG Mapping",
+                    "summary": ""
+                },
+                {
+                    "element_id": 131,
+                    "type": "paragraph",
+                    "text": "Pull out the commonproperties and assignas the object typeproperties",
+                    "summary": ""
+                },
+                {
+                    "element_id": 132,
+                    "type": "list",
+                    "text": "\u2713 To avoid re-entering ofproperties.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 133,
+                    "type": "list",
+                    "text": "\u2713 To avoid duplication ofproperty whenexported into IFC",
+                    "summary": ""
+                },
+                {
+                    "element_id": 134,
+                    "type": "paragraph",
+                    "text": "Map the existing objectlibrary properties intoconfiguration file",
+                    "summary": ""
+                },
+                {
+                    "element_id": 135,
+                    "type": "list",
+                    "text": "\u2713 One-time process",
+                    "summary": ""
+                },
+                {
+                    "element_id": 136,
+                    "type": "list",
+                    "text": "\u2713 Can be used into thefuture projects",
+                    "summary": ""
+                },
+                {
+                    "element_id": 137,
+                    "type": "list",
+                    "text": "\u2713 Eliminate duplicatedwork and errors",
+                    "summary": ""
+                },
+                {
+                    "element_id": 138,
+                    "type": "list",
+                    "text": "\u2713 Standard IFC exportsfor all your projects",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 19,
+            "elements": [
+                {
+                    "element_id": 139,
+                    "type": "paragraph",
+                    "text": "INTRODUCTION TO CX GENERAL REQUIREMENTS \u00b7 REGULATORY AGENCIES \u00b7 \u00b7 KEY GATEWAYS \u00b7 \u00b7 OTHER BUILDING WORKS \u00b7 BIM DATA REPRESENTATION",
+                    "summary": ""
+                },
+                {
+                    "element_id": 140,
+                    "type": "heading1",
+                    "text": "Preparing Models for Submission",
+                    "summary": ""
+                },
+                {
+                    "element_id": 141,
+                    "type": "heading1",
+                    "text": "Examples of IFC-SG Parameters",
+                    "summary": ""
+                },
+                {
+                    "element_id": 142,
+                    "type": "figure",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/19_142_figure.png",
+                    "summary": ""
+                },
+                {
+                    "element_id": 143,
+                    "type": "paragraph",
+                    "text": "S2 \u2013 Fig 6 and 7 : Example of IFC-SG Parameters",
+                    "summary": ""
+                },
+                {
+                    "element_id": 144,
+                    "type": "paragraph",
+                    "text": "Link:IFC-SG Resource Kit",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 20,
+            "elements": [
+                {
+                    "element_id": 145,
+                    "type": "heading1",
+                    "text": "Section 2: General RequirementsGeo-Referencing",
+                    "summary": ""
+                },
+                {
+                    "element_id": 146,
+                    "type": "paragraph",
+                    "text": "INTRODUCTION TO CX GENERAL REQUIREMENTS \u00b7 REGULATORY AGENCIES \u00b7 \u00b7 KEY GATEWAYS \u00b7 \u00b7 OTHER BUILDING WORKS \u00b7 BIM DATA REPRESENTATION",
+                    "summary": ""
+                },
+                {
+                    "element_id": 147,
+                    "type": "heading1",
+                    "text": "Geo-Referencing",
+                    "summary": ""
+                },
+                {
+                    "element_id": 148,
+                    "type": "paragraph",
+                    "text": "Models should also be correctly geo-referenced and assigned real-world coordinates from the Singapore SVY21 coordinatesystem (EPSG: 3414) for Easting and Northing (x,y), including dimensions between grids. The layout of each model shall bepresented in True North or real-world orientation, and the elevation levels or Height (z) of the model shall be set up based onthe Singapore Height Datum (SHD).",
+                    "summary": ""
+                },
+                {
+                    "element_id": 149,
+                    "type": "chart",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/20_149_chart.png",
+                    "summary": ""
+                },
+                {
+                    "element_id": 150,
+                    "type": "paragraph",
+                    "text": "S2 \u2013 Fig 8: Geo-Referencing",
+                    "summary": ""
+                },
+                {
+                    "element_id": 151,
+                    "type": "paragraph",
+                    "text": "The Singapore Institute of Surveyors and Valuers - Land Surveying Division has also come up with a video on geo-referencing, toexplore how land surveyors and architects can work together to have more efficient workflow for future CORENET X submission.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 152,
+                    "type": "paragraph",
+                    "text": "For details and video demonstration on geo-referencing, please visit the CORENET X website here.",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 21,
+            "elements": [
+                {
+                    "element_id": 153,
+                    "type": "paragraph",
+                    "text": "INTRODUCTION TO CX GENERAL REQUIREMENTS \u00b7 REGULATORY AGENCIES \u00b7 \u00b7 KEY GATEWAYS \u00b7 \u00b7 OTHER BUILDING WORKS \u00b7 BIM DATA REPRESENTATION",
+                    "summary": ""
+                },
+                {
+                    "element_id": 154,
+                    "type": "heading1",
+                    "text": "Preparing Models for Submission (Revit)",
+                    "summary": ""
+                },
+                {
+                    "element_id": 155,
+                    "type": "heading1",
+                    "text": "Example using Revit Configuration File",
+                    "summary": ""
+                },
+                {
+                    "element_id": 156,
+                    "type": "paragraph",
+                    "text": "1. Set your model into the agreed coordinates",
+                    "summary": ""
+                },
+                {
+                    "element_id": 157,
+                    "type": "paragraph",
+                    "text": "\u2022 To place model into the correct location with Architectural, Civil & Structural, Mechanical & Electrical models.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 158,
+                    "type": "chart",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/21_158_chart.png",
+                    "summary": ""
+                },
+                {
+                    "element_id": 159,
+                    "type": "heading1",
+                    "text": "S2 \u2013 Fig 9",
+                    "summary": ""
+                },
+                {
+                    "element_id": 160,
+                    "type": "paragraph",
+                    "text": "2. Identify the IFC properties to be tagged into each element of your model",
+                    "summary": ""
+                },
+                {
+                    "element_id": 161,
+                    "type": "paragraph",
+                    "text": "\u2022 Element\u2019s properties can be assigned while Modelling.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 162,
+                    "type": "figure",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/21_162_figure.png",
+                    "summary": ""
+                },
+                {
+                    "element_id": 163,
+                    "type": "paragraph",
+                    "text": "S2 \u2013 Fig 10",
+                    "summary": ""
+                },
+                {
+                    "element_id": 164,
+                    "type": "paragraph",
+                    "text": "Link:IFC-SG Resource Kit",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 22,
+            "elements": [
+                {
+                    "element_id": 165,
+                    "type": "paragraph",
+                    "text": "INTRODUCTION TO CX GENERAL REQUIREMENTS \u00b7 REGULATORY AGENCIES \u00b7 \u00b7 KEY GATEWAYS \u00b7 \u00b7 OTHER BUILDING WORKS \u00b7 BIM DATA REPRESENTATION",
+                    "summary": ""
+                },
+                {
+                    "element_id": 166,
+                    "type": "heading1",
+                    "text": "Preparing Models for Submission (Revit)",
+                    "summary": ""
+                },
+                {
+                    "element_id": 167,
+                    "type": "heading1",
+                    "text": "Example using Revit Configuration File",
+                    "summary": ""
+                },
+                {
+                    "element_id": 168,
+                    "type": "heading1",
+                    "text": "3. Set the Revit Workset",
+                    "summary": ""
+                },
+                {
+                    "element_id": 169,
+                    "type": "list",
+                    "text": "\u2022 To easily select the elements duringIFC-SG Parameters mapping.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 170,
+                    "type": "list",
+                    "text": "\u2022 To filter the views per AgencySubmission.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 171,
+                    "type": "list",
+                    "text": "\u2022 To reduce time when Exportingmodel in IFC format.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 172,
+                    "type": "list",
+                    "text": "\u2022 To easily navigate when Modellingand model auditing.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 173,
+                    "type": "figure",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/22_173_figure.png",
+                    "summary": ""
+                },
+                {
+                    "element_id": 174,
+                    "type": "heading1",
+                    "text": "4. IFC-SG Mapping",
+                    "summary": ""
+                },
+                {
+                    "element_id": 175,
+                    "type": "list",
+                    "text": "\u2022 Use BIM Interoperability Toolsto assign IFC parameters",
+                    "summary": ""
+                },
+                {
+                    "element_id": 176,
+                    "type": "list",
+                    "text": "\u2022 To avoid misspelled IFCparameters (misspelledparameters will not be exported).",
+                    "summary": ""
+                },
+                {
+                    "element_id": 177,
+                    "type": "list",
+                    "text": "\u2022 Faster than manual parameterkey-in.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 178,
+                    "type": "list",
+                    "text": "\u2022 Elements will be exported intothe correct IFC category.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 179,
+                    "type": "figure",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/22_179_figure.png",
+                    "summary": ""
+                },
+                {
+                    "element_id": 180,
+                    "type": "caption",
+                    "text": "S2 \u2013 Fig 11",
+                    "summary": ""
+                },
+                {
+                    "element_id": 181,
+                    "type": "paragraph",
+                    "text": "S2 \u2013 Fig 12",
+                    "summary": ""
+                },
+                {
+                    "element_id": 182,
+                    "type": "paragraph",
+                    "text": "Link:IFC-SG Resource Kit",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 23,
+            "elements": [
+                {
+                    "element_id": 183,
+                    "type": "paragraph",
+                    "text": "INTRODUCTION TO CX GENERAL REQUIREMENTS \u00b7 REGULATORY AGENCIES \u00b7 \u00b7 KEY GATEWAYS \u00b7 \u00b7 OTHER BUILDING WORKS \u00b7 BIM DATA REPRESENTATION",
+                    "summary": ""
+                },
+                {
+                    "element_id": 184,
+                    "type": "heading1",
+                    "text": "Preparing Models for Submission (Revit)",
+                    "summary": ""
+                },
+                {
+                    "element_id": 185,
+                    "type": "heading1",
+                    "text": "Example using Revit Configuration File",
+                    "summary": ""
+                },
+                {
+                    "element_id": 186,
+                    "type": "heading1",
+                    "text": "From Revit Library",
+                    "summary": ""
+                },
+                {
+                    "element_id": 187,
+                    "type": "paragraph",
+                    "text": "\u2022 Editing the Configuration File to Adapt In-house Company Properties",
+                    "summary": ""
+                },
+                {
+                    "element_id": 188,
+                    "type": "figure",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/23_188_figure.png",
+                    "summary": ""
+                },
+                {
+                    "element_id": 189,
+                    "type": "paragraph",
+                    "text": "S2 \u2013 Fig 13: Revit Library",
+                    "summary": ""
+                },
+                {
+                    "element_id": 190,
+                    "type": "heading1",
+                    "text": "From IFC Model",
+                    "summary": ""
+                },
+                {
+                    "element_id": 191,
+                    "type": "paragraph",
+                    "text": "S2 \u2013 Fig 14: Configuration File",
+                    "summary": ""
+                },
+                {
+                    "element_id": 192,
+                    "type": "figure",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/23_192_figure.png",
+                    "summary": ""
+                },
+                {
+                    "element_id": 193,
+                    "type": "paragraph",
+                    "text": "S2 \u2013 Fig 16",
+                    "summary": ""
+                },
+                {
+                    "element_id": 194,
+                    "type": "paragraph",
+                    "text": "Link:IFC-SG Resource Kit",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 24,
+            "elements": [
+                {
+                    "element_id": 195,
+                    "type": "paragraph",
+                    "text": "INTRODUCTION TO CX GENERAL REQUIREMENTS \u00b7 REGULATORY AGENCIES \u00b7 \u00b7 KEY GATEWAYS \u00b7 \u00b7 OTHER BUILDING WORKS \u00b7 BIM DATA REPRESENTATION",
+                    "summary": ""
+                },
+                {
+                    "element_id": 196,
+                    "type": "heading1",
+                    "text": "Top 3 Common Modelling Challenges and Solutions (Revit)",
+                    "summary": ""
+                },
+                {
+                    "element_id": 197,
+                    "type": "heading1",
+                    "text": "Example using Revit Configuration File",
+                    "summary": ""
+                },
+                {
+                    "element_id": 198,
+                    "type": "heading1",
+                    "text": "Challenge 1",
+                    "summary": ""
+                },
+                {
+                    "element_id": 199,
+                    "type": "table",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/24_199_table.png",
+                    "raw_text": "<br><table id='108' style='font-size:16px'><tr><td>Challenge</td><td>Implications</td><td>Solutions</td></tr><tr><td rowspan=\"2\">Accidentally spelling IFC property wrongly e.g. \u2713 IfcTank \uf0fb IfcTanl \uf0fb ifctank</td><td>\u27a2 Missing data in IFC</td><td>\u2713 Avoid manual typing where possible</td></tr><tr><td>\u2022 IFC properties cannot be exported \u2022 Existing in-house properties not mapped properly (to wrong IFC properties), thus also can\u2019t be exported</td><td>\u2022 Use BIM Interoperability Tool, select from drop down list \u2022 Copy Paste the information from IFC-SG Industry Mapping (.XLS file from GovTech)</td></tr></table>",
+                    "summary": ""
+                },
+                {
+                    "element_id": 200,
+                    "type": "heading1",
+                    "text": "Challenge 2",
+                    "summary": ""
+                },
+                {
+                    "element_id": 201,
+                    "type": "table",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/24_201_table.png",
+                    "raw_text": "<br><table id='110' style='font-size:16px'><tr><td>Challenge</td><td>Implications</td><td>Solutions</td></tr><tr><td rowspan=\"4\">Forgetting to update IFC after changes / modifications to model</td><td>\u27a2 Missing data in IFC</td><td>\u2713 Check Mapping</td></tr><tr><td rowspan=\"3\">\u2022 IFC properties cannot be exported \u2022 Existing in-house properties not mapped properly (to wrong IFC properties), thus also can\u2019t be exported</td><td>\u2022 Redo the mapping \u2022 Use Schedule to cross check if all elements were tagged properly.</td></tr><tr><td>\u2713 Avoid manual typing where possible</td></tr><tr><td>\u2022 Use BIM Interoperability Tool, select from drop down list \u2022 Copy Paste the information from IFC-SG Industry Mapping (.XLS file from GovTech)</td></tr></table>",
+                    "summary": ""
+                },
+                {
+                    "element_id": 202,
+                    "type": "heading1",
+                    "text": "Challenge 3",
+                    "summary": ""
+                },
+                {
+                    "element_id": 203,
+                    "type": "table",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/24_203_table.png",
+                    "raw_text": "<br><table id='112' style='font-size:16px'><tr><td>Challenge</td><td>Implications</td><td>Solutions</td></tr><tr><td rowspan=\"4\">Cannot export Revit linked files to a federated IFC (model with multiple link files) e.g. MEP sub-discipline models</td><td>\u27a2 Missing data in IFC</td><td>\u2713 Today</td></tr><tr><td rowspan=\"3\">\u2022 Assigned systems will be lost \u2022 IFC properties cannot be exported \u2022 Existing in-house properties not mapped properly (to wrong IFC properties), thus also can\u2019t be exported</td><td>\u2022 Tag information after binding models \u2022 Use Group Models instead of Binding \u2022 Avoid binding if possible (i.e. export linked files one by one)</td></tr><tr><td>\u2713 Future</td></tr><tr><td>\u2022 Through CORENET X community of practice, we have feedback to Autodesk to enable export of federated IFC \u2022 Autodesk shared that this is part of the Revit Roadmap and will be included progressively in early 2023</td></tr></table>",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 25,
+            "elements": [
+                {
+                    "element_id": 204,
+                    "type": "paragraph",
+                    "text": "INTRODUCTION TO CX GENERAL REQUIREMENTS \u00b7 REGULATORY AGENCIES \u00b7 \u00b7 KEY GATEWAYS \u00b7 \u00b7 OTHER BUILDING WORKS \u00b7 BIM DATA REPRESENTATION",
+                    "summary": ""
+                },
+                {
+                    "element_id": 205,
+                    "type": "heading1",
+                    "text": "Preparing Models for Submission (Archicad)",
+                    "summary": ""
+                },
+                {
+                    "element_id": 206,
+                    "type": "heading1",
+                    "text": "Example using Archicad Configuration File",
+                    "summary": ""
+                },
+                {
+                    "element_id": 207,
+                    "type": "heading1",
+                    "text": "1. Geo-reference the project",
+                    "summary": ""
+                },
+                {
+                    "element_id": 208,
+                    "type": "paragraph",
+                    "text": "\u2022 To geo reference the project for Architectural, Civil & Structural, Mechanical & Electrical Model, refer here.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 209,
+                    "type": "figure",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/25_209_figure.png",
+                    "summary": ""
+                },
+                {
+                    "element_id": 210,
+                    "type": "paragraph",
+                    "text": "S2 \u2013 Fig 17",
+                    "summary": ""
+                },
+                {
+                    "element_id": 211,
+                    "type": "heading1",
+                    "text": "2. Identify the IFC properties to be tagged into each element in your model",
+                    "summary": ""
+                },
+                {
+                    "element_id": 212,
+                    "type": "paragraph",
+                    "text": "\u2022 Element\u2019s properties can be assigned while modeling. Note: some parameters can be auto-filled using expressions.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 213,
+                    "type": "figure",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/25_213_figure.png",
+                    "summary": ""
+                },
+                {
+                    "element_id": 214,
+                    "type": "paragraph",
+                    "text": "Link:IFC-SG Resource Kit",
+                    "summary": ""
+                },
+                {
+                    "element_id": 215,
+                    "type": "paragraph",
+                    "text": "S2 \u2013 Fig 18",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 26,
+            "elements": [
+                {
+                    "element_id": 216,
+                    "type": "paragraph",
+                    "text": "INTRODUCTION TO CX GENERAL REQUIREMENTS \u00b7 REGULATORY AGENCIES \u00b7 \u00b7 KEY GATEWAYS \u00b7 \u00b7 OTHER BUILDING WORKS \u00b7 BIM DATA REPRESENTATION",
+                    "summary": ""
+                },
+                {
+                    "element_id": 217,
+                    "type": "heading1",
+                    "text": "Preparing Models for Submission (Archicad)",
+                    "summary": ""
+                },
+                {
+                    "element_id": 218,
+                    "type": "heading1",
+                    "text": "Example using Archicad Configuration File",
+                    "summary": ""
+                },
+                {
+                    "element_id": 219,
+                    "type": "heading1",
+                    "text": "3. Set the View for Export from Navigator",
+                    "summary": ""
+                },
+                {
+                    "element_id": 220,
+                    "type": "list",
+                    "text": "\u2022 To easily view and selectthe elements whilemodelling.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 221,
+                    "type": "list",
+                    "text": "\u2022 To easily navigate whilemodeling and checking.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 222,
+                    "type": "list",
+                    "text": "\u2022 To filter the views as perAgency Submission.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 223,
+                    "type": "list",
+                    "text": "\u2022 To easily export onlyelements visible on thecurrent view.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 224,
+                    "type": "figure",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/26_224_figure.png",
+                    "summary": ""
+                },
+                {
+                    "element_id": 225,
+                    "type": "paragraph",
+                    "text": "S2 \u2013 Fig 19",
+                    "summary": ""
+                },
+                {
+                    "element_id": 226,
+                    "type": "heading1",
+                    "text": "4. Model Verification using IFC Project Manager",
+                    "summary": ""
+                },
+                {
+                    "element_id": 227,
+                    "type": "list",
+                    "text": "\u2022 IFC Project Manager forModel Verification beforeexport",
+                    "summary": ""
+                },
+                {
+                    "element_id": 228,
+                    "type": "list",
+                    "text": "\u2022 Assign or edit IFC-SGProperty Values.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 229,
+                    "type": "list",
+                    "text": "\u2022 Create custom IFCProperty, Groups (Zones,Systems)",
+                    "summary": ""
+                },
+                {
+                    "element_id": 230,
+                    "type": "figure",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/26_230_figure.png",
+                    "summary": ""
+                },
+                {
+                    "element_id": 231,
+                    "type": "paragraph",
+                    "text": "S2 \u2013 Fig 20",
+                    "summary": ""
+                },
+                {
+                    "element_id": 232,
+                    "type": "paragraph",
+                    "text": "Link:IFC-SG Resource Kit",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 27,
+            "elements": [
+                {
+                    "element_id": 233,
+                    "type": "paragraph",
+                    "text": "INTRODUCTION TO CX GENERAL REQUIREMENTS \u00b7 REGULATORY AGENCIES \u00b7 \u00b7 KEY GATEWAYS \u00b7 \u00b7 OTHER BUILDING WORKS \u00b7 BIM DATA REPRESENTATION",
+                    "summary": ""
+                },
+                {
+                    "element_id": 234,
+                    "type": "heading1",
+                    "text": "Preparing Models for Submission (Archicad)",
+                    "summary": ""
+                },
+                {
+                    "element_id": 235,
+                    "type": "heading1",
+                    "text": "Example using Archicad Configuration File",
+                    "summary": ""
+                },
+                {
+                    "element_id": 236,
+                    "type": "heading1",
+                    "text": "5. IFC-SG Property Mapping",
+                    "summary": ""
+                },
+                {
+                    "element_id": 237,
+                    "type": "paragraph",
+                    "text": "\u2022 IFC-SG Properties arealready mapped in the IFC-SG Export Translator.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 238,
+                    "type": "figure",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/27_238_figure.png",
+                    "summary": ""
+                },
+                {
+                    "element_id": 239,
+                    "type": "paragraph",
+                    "text": "S2 \u2013 Fig 21",
+                    "summary": ""
+                },
+                {
+                    "element_id": 240,
+                    "type": "heading1",
+                    "text": "6. Export IFC Model",
+                    "summary": ""
+                },
+                {
+                    "element_id": 241,
+                    "type": "list",
+                    "text": "\u2022 Export visible elements (inall stories)",
+                    "summary": ""
+                },
+                {
+                    "element_id": 242,
+                    "type": "list",
+                    "text": "\u2022 Make sure to chose IFC-SGTranslator",
+                    "summary": ""
+                },
+                {
+                    "element_id": 243,
+                    "type": "list",
+                    "text": "\u2022 Verify the IFC model in BIMVision or Solibri Anywhereafter exporting.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 244,
+                    "type": "figure",
+                    "path": "/Users/dylim/Documents/projects/RAG_Langchain/src/backend/test/pdf_test/img/da1a7f60-8f09-43c6-a135-a05bc2a8267c/27_244_figure.png",
+                    "summary": ""
+                },
+                {
+                    "element_id": 245,
+                    "type": "paragraph",
+                    "text": "Link:IFC-SG Resource Kit",
+                    "summary": ""
+                },
+                {
+                    "element_id": 246,
+                    "type": "paragraph",
+                    "text": "S2 \u2013 Fig 22",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        },
+        {
+            "page_number": 28,
+            "elements": [
+                {
+                    "element_id": 247,
+                    "type": "heading1",
+                    "text": "\u00a9 COPYRIGHT",
+                    "summary": ""
+                },
+                {
+                    "element_id": 248,
+                    "type": "paragraph",
+                    "text": "The contents of this guide are protected by copyright and other forms of proprietary rights, and are the property of agenciesinvolved in CORENET X, or the party credited as the provider of the contents. You shall not copy, reproduce, upload, distribute,publish, post, modify, create derivative works, transmit or in any way exploit the contents of this COP. If you wish to use thecontents for any purpose other than for your own reference, please seek prior written consent from agencies involved inCORENET X.",
+                    "summary": ""
+                },
+                {
+                    "element_id": 249,
+                    "type": "heading1",
+                    "text": "PHOTO CREDITS",
+                    "summary": ""
+                },
+                {
+                    "element_id": 250,
+                    "type": "paragraph",
+                    "text": "Photos used in this publication are attributed to Unsplash, unless stated otherwise.",
+                    "summary": ""
+                }
+            ],
+            "metadata": {},
+            "summary": ""
+        }
+    ]
+}

@@ -4,6 +4,7 @@ from langchain_qdrant import QdrantVectorStore
 from qdrant_client.http.models import Distance, VectorParams
 from langchain.schema import Document  # Make sure to import Document
 from qdrant_client.http.models import Filter, FieldCondition, MatchValue
+
 import logging
 
 
