@@ -39,12 +39,27 @@ def add_document():
             app.logger.info(f"Processing document: {file.filename}")
             result = document_processor.process_document(vector_store, file)
 
-            if result:
+            # Advance document process
+            temp_path = f"/tmp/{file.filename}"
+            # file.save(temp_path)
+            split_document_paths = document_processor.split_pdf_if_needed(temp_path)
+            document_processor.parse_document(split_document_paths)
+            document_processor.create_summary()
+            advance_result = document_processor.advanced_process_document(vector_store)
+
+            if result and advance_result:
                 app.logger.info(f"Document {file.filename} processed successfully.")
                 return jsonify({"message": "Document added successfully"}), 200
             else:
-                app.logger.error(f"Failed to process document: {file.filename}")
-                return jsonify({"error": "Failed to process document"}), 500
+                error_messages = []
+                if not result:
+                    error_messages.append("Failed to process document.")
+                if not advance_result:
+                    error_messages.append("Failed to advance process document.")
+                app.logger.error(
+                    f"Errors: {', '.join(error_messages)} for document: {file.filename}"
+                )
+                return jsonify({"error": " ".join(error_messages)}), 500
         else:
             app.logger.warning(f"Invalid file format: {file.filename}")
             return jsonify({"error": "Invalid file format. Please upload a PDF."}), 400
@@ -69,8 +84,11 @@ async def ask_question_route():
         question = data["question"]
         app.logger.info(f"Received question: {question}")
 
+        is_advance_search = False if "advance_search" not in data else True
+        app.logger.info(f"Advance search: {is_advance_search}")
+
         # Use the chatbot to get a response
-        response = await chatbot.ask_question(question)
+        response = await chatbot.ask_question(question, is_advance_search)
         app.logger.info(f"Chatbot response: {response}")
 
         return jsonify(response), 200

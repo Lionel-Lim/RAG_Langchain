@@ -1,6 +1,7 @@
 from langchain_community.document_loaders import PyPDFLoader
+from langchain.schema import HumanMessage
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_core.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate, ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables.base import RunnableSerializable
 from langchain.schema import Document
@@ -26,6 +27,7 @@ from model.pdf_metadata import (
 )
 from langchain_google_vertexai import ChatVertexAI
 
+
 import os
 import hashlib
 import uuid
@@ -36,7 +38,7 @@ import json
 import yaml
 import base64
 
-
+ChatPromptTemplate.from_template
 # Configure logging
 logging.basicConfig(
     level=logging.DEBUG,  # Set the logging level to DEBUG
@@ -50,7 +52,6 @@ logging.basicConfig(
 
 class DocumentProcessor:
     def __init__(self):
-        self.parsed_metadata = PDFMetadata()
         self.metadata = DocumentMetadata()
 
     def process_document(self, vector_store: VectorStore, file):
@@ -79,6 +80,47 @@ class DocumentProcessor:
             return False
         except Exception as e:
             logging.error(f"Error processing document {file.filename}: {e}")
+            return False
+
+    def advanced_process_document(self, vector_store: VectorStore) -> bool:
+        all_nodes: List[Document] = []
+        if not self.metadata.file_guid:
+            return False
+        try:
+            # Save page level summary
+            for page in self.metadata.pages:
+                if page.summary:
+                    node = Document(
+                        page_content=page.summary,
+                        metadata={
+                            "page_number": page.page_number,
+                            "file_guid": self.metadata.file_guid,
+                        },
+                    )
+                    all_nodes.append(node)
+            # Save element level summary
+            for page in self.metadata.pages:
+                for element in page.elements:
+                    if element.summary:
+                        node = Document(
+                            page_content=element.summary,
+                            metadata={
+                                "page_number": page.page_number,
+                                "element_id": element.element_id,
+                                "file_guid": self.metadata.file_guid,
+                            },
+                        )
+                        all_nodes.append(node)
+            vector_store.add_documents(all_nodes, is_advance_search=True)
+            logging.info(f"Document {self.metadata.file_name} processed")
+            return True
+        except ValueError as ve:
+            logging.error(
+                f"ValueError processing document {self.metadata.file_name}: {ve}"
+            )
+            return False
+        except Exception as e:
+            logging.error(f"Error processing document {self.metadata.file_name}: {e}")
             return False
 
     def parse_document(self, file_path_list: List[str]):
@@ -257,12 +299,10 @@ class DocumentProcessor:
 
     # Function to split PDF if it exceeds API limitations
     def split_pdf_if_needed(self, file_path: str) -> List[str]:
-        self.parsed_metadata.file_guid = self.get_doc_guid(file_path)
-        self.metadata.file_guid = str(self.parsed_metadata.file_guid)
+        self.metadata.file_guid = str(self.get_doc_guid(file_path))
         file_guid = self.metadata.file_guid
 
-        self.parsed_metadata.file_name = os.path.basename(file_path)
-        self.metadata.file_name = self.parsed_metadata.file_name
+        self.metadata.file_name = os.path.basename(file_path)
 
         file_dir = os.path.dirname(file_path)
 
@@ -270,13 +310,11 @@ class DocumentProcessor:
         doc = pymupdf.open(file_path)
 
         total_pages = len(doc)
-        self.parsed_metadata.page_numbers = total_pages
         self.metadata.page_numbers = total_pages
 
         # Check file size (in MB)
-        self.parsed_metadata.file_size = os.path.getsize(file_path)
         self.metadata.file_size = os.path.getsize(file_path)
-        file_size_mb = self.parsed_metadata.file_size / (1024 * 1024)
+        file_size_mb = self.metadata.file_size / (1024 * 1024)
 
         split_files = []
         if total_pages > 100 or file_size_mb > 50:
@@ -337,9 +375,7 @@ class DocumentProcessor:
         logging.debug("Loading prompt templates from common/prompts.yaml.")
         with open("common/prompts.yaml", "r") as file:
             prompts = yaml.safe_load(file)
-        prompt_template_image = PromptTemplate.from_template(
-            prompts["image_to_text_prompt"]["template"]
-        )
+        prompt_template_image = prompts["image_to_text_prompt"]["template"]
         prompt_template_text = PromptTemplate.from_template(
             prompts["text_summarization_prompt"]["template"]
         )
@@ -365,7 +401,7 @@ class DocumentProcessor:
         # Define prompt templates and chains
         logging.debug("Defining prompt templates and chains.")
         text_chain = prompt_template_text | chat_model | StrOutputParser()
-        image_chain = prompt_template_image | chat_model | StrOutputParser()
+        image_chain = chat_model | StrOutputParser()
         logging.info("Prompt templates and chains defined.")
 
         # Process image elements
@@ -386,7 +422,9 @@ class DocumentProcessor:
 
         # Batch processing
         logging.info("Starting batch processing of image elements.")
-        self.batch_process_images(image_elements, image_chain, all_elements)
+        self.batch_process_images(
+            image_elements, all_elements, chat_model, prompt_template_image
+        )
         logging.info("Completed batch processing of image elements.")
 
         logging.info("Starting batch processing of text elements.")
@@ -445,18 +483,33 @@ class DocumentProcessor:
             logging.debug(f"Assigned summary to page index {idx}.")
         logging.info("All page summaries assigned successfully.")
 
-    def get_context_elements(self, target_id: int, all_elements: List, window: int = 5):
+    def get_context_elements(
+        self,
+        target_id: int,
+        all_elements: List,
+        window: int = 5,
+        min_text_elements: int = 10,
+    ):
         element_indices = {
             element.element_id: idx for idx, element in enumerate(all_elements)
         }
         target_idx = element_indices.get(target_id)
         if target_idx is None:
             return []
-        start_idx = max(0, target_idx - window)
-        end_idx = min(len(all_elements), target_idx + window + 1)
-        context_elements = (
-            all_elements[start_idx:target_idx] + all_elements[target_idx + 1 : end_idx]
-        )
+
+        current_window = window
+        while current_window < len(all_elements):
+            start_idx = max(0, target_idx - current_window)
+            end_idx = min(len(all_elements), target_idx + current_window + 1)
+            context_elements = (
+                all_elements[start_idx:target_idx]
+                + all_elements[target_idx + 1 : end_idx]
+            )
+            text_elements = [e for e in context_elements if isinstance(e, TextElement)]
+            if len(text_elements) >= min_text_elements:
+                break
+            current_window += window
+
         return context_elements
 
     def convert_image_to_base64(self, image_path: str):
@@ -466,8 +519,9 @@ class DocumentProcessor:
     def batch_process_images(
         self,
         image_elements: List[ImageElement | TableElement],
-        image_chain: RunnableSerializable,
         all_elements: List,
+        llm_model: ChatVertexAI,
+        template,
         batch_size=5,
     ):
         logging.info("Starting batch processing of images.")
@@ -485,8 +539,12 @@ class DocumentProcessor:
             try:
                 image_base64 = self.convert_image_to_base64(element.path)
                 image_data = f"data:image/png;base64,{image_base64}"
-                input_data = {"context_text": context_text, "image_data": image_data}
-                image_inputs.append(input_data)
+                formatted_prompt = template.format(context_text=context_text)
+                message = [
+                    {"role": "system", "content": formatted_prompt},
+                    {"role": "user", "content": image_data},
+                ]
+                image_inputs.append(message)
             except Exception as e:
                 logging.error(f"Error reading image at {element.path}: {e}")
                 element.summary = ""
@@ -494,7 +552,7 @@ class DocumentProcessor:
         logging.info(
             f"Sending {len(image_inputs)} images to the image_chain for processing."
         )
-        image_descriptions = image_chain.batch(
+        image_descriptions = llm_model.batch(
             image_inputs, config={"max_concurrency": batch_size}
         )
 
@@ -504,7 +562,7 @@ class DocumentProcessor:
             logging.debug(
                 f"Assigning summary to image {idx}/{len(image_elements)}: {element.path}"
             )
-            element.summary = description
+            element.summary = description.content
         logging.info("Completed batch processing of images.")
 
     def batch_process_texts(
@@ -552,7 +610,11 @@ class DocumentProcessor:
         }
 
         # Define the output file path
-        output_file_path = os.path.join("./output", "result.json")
+        output_dir = "./output"
+        output_file_path = os.path.join(output_dir, "result.json")
+
+        # Ensure the directory exists
+        os.makedirs(output_dir, exist_ok=True)
 
         # Write the dictionary to a JSON file
         with open(output_file_path, "w") as output_file:

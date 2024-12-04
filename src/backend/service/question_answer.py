@@ -41,9 +41,9 @@ class Chatbot:
         state["messages"].append(response)
         return state
 
-    async def ask_question(self, question: str):
+    async def ask_question(self, question: str, advance_search=False):
         try:
-            related_chunks = await self.get_related_chunks(question)
+            related_chunks = await self.get_related_chunks(question, advance_search)
             if not related_chunks:
                 return {"error": "No related chunks found"}
 
@@ -65,9 +65,11 @@ class Chatbot:
             self.log_error(f"Error answering question: {str(e)}")
             return {"error": "Failed to answer question"}
 
-    async def get_related_chunks(self, query: str) -> List[str]:
+    async def get_related_chunks(self, query: str, advance_search=False) -> List[str]:
         try:
-            related_documents = self.vector_store.search_documents(query)
+            related_documents = self.vector_store.search_documents(
+                query, advance_search
+            )
             return [doc.page_content for doc in related_documents]
         except Exception as e:
             self.log_error(f"Error retrieving related chunks: {str(e)}")

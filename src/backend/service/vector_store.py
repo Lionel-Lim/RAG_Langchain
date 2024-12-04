@@ -13,6 +13,7 @@ class VectorStore:
         DB_SERVICE_NAME = config["db_service_name"]
         EMBEDDINGS_MODEL = config["embeddings_model"]
         VECTORSTORE_COLLECTION_NAME = config["vectorstore_collection_name"]
+        ADVANCED_SEARCH_COLLECTION_NAME = config["advanced_search_collection_name"]
 
         embeddings = VertexAIEmbeddings(model_name=EMBEDDINGS_MODEL)
         client = QdrantClient(url=f"{DB_SERVICE_NAME}:6334", prefer_grpc=True)
@@ -28,6 +29,19 @@ class VectorStore:
             logging.info(f"Created new collection: {VECTORSTORE_COLLECTION_NAME}")
         else:
             logging.info(f"Using existing collection: {VECTORSTORE_COLLECTION_NAME}")
+        # Create the advanced search collection if it does not exist
+        if not client.collection_exists(ADVANCED_SEARCH_COLLECTION_NAME):
+            client.create_collection(
+                collection_name=ADVANCED_SEARCH_COLLECTION_NAME,
+                vectors_config=VectorParams(
+                    size=768, distance=Distance.COSINE, on_disk=True
+                ),
+            )
+            logging.info(f"Created new collection: {ADVANCED_SEARCH_COLLECTION_NAME}")
+        else:
+            logging.info(
+                f"Using existing collection: {ADVANCED_SEARCH_COLLECTION_NAME}"
+            )
 
         # Initialize the vector store
         self.vector_store = QdrantVectorStore(
@@ -35,13 +49,23 @@ class VectorStore:
             collection_name=VECTORSTORE_COLLECTION_NAME,
             embedding=embeddings,
         )
+        self.advanced_search_vector_store = QdrantVectorStore(
+            client=client,
+            collection_name=ADVANCED_SEARCH_COLLECTION_NAME,
+            embedding=embeddings,
+        )
 
         self.client = client
 
-    def add_documents(self, documents: list[Document]) -> list[str]:
+    def add_documents(
+        self, documents: list[Document], is_advance_search: bool = False
+    ) -> list[str]:
         try:
             # Call the add_documents method and capture the returned IDs
-            ids = self.vector_store.add_documents(documents)
+            if is_advance_search:
+                ids = self.advanced_search_vector_store.add_documents(documents)
+            else:
+                ids = self.vector_store.add_documents(documents)
             logging.info(f"Added {len(ids)} documents to the vector store.")
             return ids  # Return the IDs if needed
         except ValueError as ve:
@@ -53,10 +77,15 @@ class VectorStore:
             logging.error(f"Error adding documents: {e}")
             raise
 
-    def search_documents(self, query: str) -> list[Document]:
+    def search_documents(
+        self, query: str, is_advance_search: bool = False
+    ) -> list[Document]:
         try:
             # Search for related documents in the vector store
-            results = self.vector_store.similarity_search(query)
+            if is_advance_search:
+                results = self.advanced_search_vector_store.similarity_search(query)
+            else:
+                results = self.vector_store.similarity_search(query)
             return results
         except Exception as e:
             logging.error(f"Error searching documents: {e}")

@@ -13,31 +13,6 @@ context_prompt:
   variables:
     - context_str
     - query_str
-image_to_text_prompt:
-  template: |
-    You are an experienced engineer capable of analyzing images and providing detailed descriptions. 
-    Your task is to describe the image provided, taking into account the surrounding context.
-    ---------------------
-    Context: {context_text}
-    ---------------------
-    Please analyze the following image and provide a detailed description. 
-    Consider the context provided and how the image relates to it. 
-    Your description should be comprehensive, accurate, and relevant to the given context.
-
-    ---------------------
-    Image: {image_data}
-    ---------------------
-
-    Describe the image in detail, addressing the following points:
-    1. What is the main subject or focus of the image?
-    2. What are the key visual elements present?
-    3. How does the image relate to the provided context?
-    4. Are there any notable details or features that stand out?
-
-    Provide your description in a clear, concise manner, focusing on the most relevant aspects of the image in relation to the given context.
-  variables:
-    - context_text
-    - image_data
 text_summarization_prompt:
   template: |
     You are an expert in the Architecture, Engineering, and Construction (AEC) industry.
@@ -58,3 +33,17 @@ text_summarization_prompt:
   variables:
     - context_text
     - text_data
+image_to_text_prompt:
+  template: |
+    Analyze the provided image that is extacted from engineering code and standard document and its accompanying text, then generate a concise and informative summary focusing on the following aspects:
+
+    1. Image content: Describe the key visual elements, including diagrams, charts, or technical illustrations.
+    2. Technical specifications: Highlight any numerical values, measurements, or parameters shown.
+    3. Code or standard reference: Identify any specific codes, standards, or regulations mentioned.
+    4. Key concepts: Summarize the main engineering principles or concepts illustrated.
+    ---------------------
+    Context: {context_text}
+    ---------------------
+    Provide a summary of approximately 100-200 words that captures the essential technical information and context. Use clear, concise language suitable for database storage and retrieval.
+  variables:
+    - context_text
