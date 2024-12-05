@@ -2,6 +2,7 @@ from flask import Blueprint, request, jsonify, current_app as app
 from service.document_processor import DocumentProcessor
 from service.question_answer import Chatbot
 from service.vector_store import VectorStore
+from service.firebase import FirestoreManager
 
 # Create a Blueprint for modular routes
 routes_bp = Blueprint("routes", __name__)
@@ -14,6 +15,26 @@ def initialize_services():
     vector_store = VectorStore(app.config)
     document_processor = DocumentProcessor()
     chatbot = Chatbot(app.config, vector_store)
+
+
+@routes_bp.route("/get_documents", methods=["GET"])
+def get_documents():
+    """
+    Endpoint to get the list of document metadata.
+    """
+    try:
+        # Initialize FirestoreManager
+        firestore_manager = FirestoreManager()
+
+        # Retrieve all document metadata
+        documents = firestore_manager.get_all_document_metadata()
+
+        # Return the documents as JSON
+        return jsonify(documents), 200
+    except Exception as e:
+        # Log the error with traceback and custom message
+        app.logger.exception(f"Error retrieving documents: {str(e)}")
+        return jsonify({"error": str(e)}), 500
 
 
 @routes_bp.route("/add_document", methods=["POST"])
@@ -87,8 +108,13 @@ async def ask_question_route():
         is_advance_search = False if "advance_search" not in data else True
         app.logger.info(f"Advance search: {is_advance_search}")
 
+        document_guids = data.get("document_guids", [])
+        app.logger.info(f"Document GUIDs: {document_guids}")
+
         # Use the chatbot to get a response
-        response = await chatbot.ask_question(question, is_advance_search)
+        response = await chatbot.ask_question(
+            question, is_advance_search, document_guids
+        )
         app.logger.info(f"Chatbot response: {response}")
 
         return jsonify(response), 200
@@ -96,19 +122,3 @@ async def ask_question_route():
         # Log the error with traceback and custom message
         app.logger.exception(f"Error while handling the /ask endpoint: {str(e)}")
         return jsonify({"error": str(e)}), 500
-
-
-# @routes_bp.route("/get_document_names", methods=["GET"])
-# def get_document_names():
-#     """
-#     Endpoint to get the names of all documents in the vector store.
-#     """
-#     try:
-#         # Get all document names from the vector store
-#         document_names = vector_store.get_all_document_names()
-#         app.logger.info(f"Document names retrieved: {document_names}")
-#         return jsonify(document_names), 200
-#     except Exception as e:
-#         # Log the error with traceback and custom message
-#         app.logger.exception(f"Error getting document names: {str(e)}")
-#         return jsonify({"error": str(e)}), 500

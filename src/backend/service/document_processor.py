@@ -26,6 +26,7 @@ from model.pdf_metadata import (
     DocumentMetadata,
 )
 from langchain_google_vertexai import ChatVertexAI
+from service.firebase import FirestoreManager
 
 
 import os
@@ -61,6 +62,8 @@ class DocumentProcessor:
             loader = PyPDFLoader(temp_path)
             documents = loader.load()  # This should return a list of Documents
 
+            doc_guid = str(self.get_doc_guid(temp_path))
+
             text_splitter = RecursiveCharacterTextSplitter(
                 chunk_size=1000, chunk_overlap=200
             )
@@ -72,6 +75,11 @@ class DocumentProcessor:
 
             # Call add_documents and handle the returned IDs
             ids = vector_store.add_documents(splits)
+
+            # Save the metadata to Firestore
+            firestore_manager = FirestoreManager()
+            firestore_manager.save_document_metadata_simple(doc_guid, ids)
+
             logging.info(f"Document {file.filename} processed")
 
             return True
@@ -112,6 +120,11 @@ class DocumentProcessor:
                         )
                         all_nodes.append(node)
             vector_store.add_documents(all_nodes, is_advance_search=True)
+
+            # Save metadata to Firestore
+            firestore_manager = FirestoreManager()
+            firestore_manager.save_document_metadata_advanced(self.metadata)
+
             logging.info(f"Document {self.metadata.file_name} processed")
             return True
         except ValueError as ve:
@@ -396,6 +409,7 @@ class DocumentProcessor:
         # Initialize AI model
         logging.debug("Initializing ChatVertexAI model.")
         chat_model = ChatVertexAI(model="gemini-1.5-pro-002", temperature=0.1)
+        fast_model = ChatVertexAI(model="gemini-1.5-flash-002", temperature=0.1)
         logging.info("ChatVertexAI model initialized.")
 
         # Define prompt templates and chains
@@ -423,7 +437,7 @@ class DocumentProcessor:
         # Batch processing
         logging.info("Starting batch processing of image elements.")
         self.batch_process_images(
-            image_elements, all_elements, chat_model, prompt_template_image
+            image_elements, all_elements, fast_model, prompt_template_image
         )
         logging.info("Completed batch processing of image elements.")
 
@@ -522,7 +536,7 @@ class DocumentProcessor:
         all_elements: List,
         llm_model: ChatVertexAI,
         template,
-        batch_size=5,
+        batch_size=3,
     ):
         logging.info("Starting batch processing of images.")
         image_inputs = []

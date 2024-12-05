@@ -78,14 +78,32 @@ class VectorStore:
             raise
 
     def search_documents(
-        self, query: str, is_advance_search: bool = False
+        self,
+        query: str,
+        is_advance_search: bool = False,
+        document_guids: list[str] = [],
     ) -> list[Document]:
         try:
+            # Create a filter if document_guids are provided
+            filter_condition = None
+            if document_guids:
+                filter_condition = Filter(
+                    must=[
+                        FieldCondition(
+                            key="metadata.file_guid", match=MatchValue(value=guid)
+                        )
+                        for guid in document_guids
+                    ]
+                )
+
             # Search for related documents in the vector store
             if is_advance_search:
-                results = self.advanced_search_vector_store.similarity_search(query)
+                results = self.advanced_search_vector_store.similarity_search(
+                    query, filter=filter_condition
+                )
             else:
                 results = self.vector_store.similarity_search(query)
+
             return results
         except Exception as e:
             logging.error(f"Error searching documents: {e}")
